@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Spinner from './components/Spinner';
 
 const ChatPage = React.lazy(() => import('./pages/ChatPage'));
