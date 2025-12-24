@@ -332,8 +332,8 @@ const ChatPage: React.FC = () => {
       return;
     }
 
-    if (cleanUsername.length > 10) {
-      alert("يجب ألا يتجاوز الاسم 10 خانات");
+    if (cleanUsername.length > 15) {
+      alert("يجب ألا يتجاوز الاسم 15 خانات");
       return;
     }
 
@@ -495,10 +495,10 @@ const ChatPage: React.FC = () => {
               <input
                 id="username-input"
                 type="text"
-                placeholder="أدخل اسمك (بحد أقصى 10 أحرف)..."
+                placeholder="أدخل اسمك (بحد أقصى 15 أحرف)..."
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                maxLength={10}
+                maxLength={15}
                 className="w-full p-4 rounded-xl border-2 border-gray-200 dark:border-gray-600 focus:border-primary focus:outline-none transition-colors text-right bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 required
               />
